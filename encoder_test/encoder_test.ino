@@ -34,8 +34,8 @@ void setup()
   pinMode(encoderL_B, INPUT);
   
   // interrupts
-  attachInterrupt(0, readEncoderR, CHANGE);
-  attachInterrupt(1, readEncoderL, CHANGE);
+  attachInterrupt(1, readEncoderR, CHANGE);
+  attachInterrupt(0, readEncoderL, CHANGE);
   
   // 
   Serial.begin(9600);
